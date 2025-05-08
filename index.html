@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sass Agency</title>
+    <link rel="shortcut icon" href="img/L1.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="vendor/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="vendor/jquery-nice-select-1.1.0/jquery-nice-select-1.1.0/css/nice-select.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <!-- <link rel="stylesheet" href="https://www.fontshare.com/fonts/clash-grotesk"> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="premium-nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <img loading="lazy" src="img/L1.png">&nbsp;Boltzshift
+                <!-- <div class="logo-shine"></div> -->
+            </a>
+
+            <div class="nav-links">
+                <a href="#" class="nav-link active">
+                    <span>Home</span>
+                </a>
+                <a href="#" class="nav-link">
+                    <span>About</span>
+                </a>
+                <a href="#" class="nav-link">
+                    <span>Services</span>
+                </a>
+                <a href="#" class="nav-link">
+                    <span>Blog</span>
+                </a>
+                <a href="#" class="nav-link">
+                    <span>Contact</span>
+                </a>
+                <button class="btn btn-yellow3">
+                    Get in Touch
+                </button>
+            </div>
+            <div class="nav-actions">
+                <button class="btn btn-yellow3">
+                    Get in Touch
+                </button>
+                <button class="theme-toggle ms-3" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-sun sun-icon"></i>
+                    <i class="fas fa-moon moon-icon"></i>
+                </button>
+                <button class="mobile-menu" aria-label="Menu">
+                    <i class="ri-menu-line">
+                        <!-- Mobile Menu Button -->
+                        <div class="menu-toggle" id="menu-toggle">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </i>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="menu">
+        <div class="modal-dialog modal-dialog-centered" style="background-color: transparent !important;">
+            <div class="modal-content">
+                <div class="modal-header justify-content-end bg-white">
+                    <b>
+                        <a href="#" class="modal-x" data-dismiss="modal">X</a>
+                    </b>
+                </div>
+                <div class="modal-body p-0 bg-white">
+                    <video src="img/sass.mp4" autoplay controls style="width: 100% !important;"></video>
+                </div>
+                <div class="modal-footer bg-white">
+                    <button class="btn btn-success" data-toggle="modal" data-target="#menu">Go to it</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Modal -->
+    <div class="container-fluid">
+        <img loading="lazy" src="img/Banner.png" class="bg-banner mt-1">
+        <div class="row df">
+            <div class="d-flex flex-column" style="background-color: transparent;">
+                <h1 class="h-text">
+                    WE ARE
+                    <div class="zoom mx-2"><img src="img/img-bg.png" class="text-img"></div>CREATIVE
+                </h1>
+                <h1 class="h-text2">
+                    AGENCEIES
+                    <div class="d-flex mx-2" style="background-color: transparent !important;">
+                        <img src="img/Play.png" class="play-icon" data-toggle="modal" data-target="#menu">
+                        <img src="img/video-reel.png" class="play-box">
+                    </div>
+                    <span class="modal-text">Award-widding studio <br>Based in San Francisco</span>
+                </h1>
+                <span class="a-text my-3">Boltzshift Studio is a design & develop agency of the future with 120+ successful <br> projects in their portfolio.</span>
+                <button class="btn arrow">
+                    Book a demo
+                    <img src="img/link-arrow-right.png" style="background-color: transparent;">
+                </button>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-xl-6 col-md-6">
+                <h4 class="star-text">ABOUT THE <br> BOLTZSHIFT AGENCY</h4>
+                <img src="img/star.png" class="offset-xl-1 offset-md-1 my-3">
+            </div>
+            <div class="col-xl-6 col-md-6">
+                <p class="star-text2">Boltzshift is a distinguished design and development agency based in the United Kingdom, known for our commitment to crafting exceptional digital experiences.</p>
+                <p class="star-text2">Since 2018 Boltzshift has been reshaping the web & mobile apps with top-notch design and the power of no <br> code.</p>
+            </div>
+        </div>
+        <!-- Facts-row -->
+        <div class="row p-0"><br>
+            <div class="card-wrapper">
+                <div class="card__bg__image1">
+                    <img loading="lazy" src="img/image 2.png">
+                </div>
+                <img src="img/about-img2.png" class="card-img2">
+            </div>
+            <div class="col-xl-6 col-md-6">
+                <h4 class="star-text mt-3">GET AQUANTED WITH <br> OUR KEY FACTS</h4>
+            </div>
+            <div class="col-xl-6 col-md-6 p-0">
+                <div class="counter-container">
+                    <div class="text-center">
+                        <span class="counter" id="count1">0</span><span class="yellow">k</span>
+                        <div class="label">Trusted Users</div>
+                    </div>
+                    <div class="text-center">
+                        <span class="counter" id="count2">0</span><span class="yellow">+</span>
+                        <div class="label">Project Completed</div>
+                    </div>
+                    <div class="text-center">
+                        <span class="counter" id="count3">0</span><span class="yellow">%</span>
+                        <div class="label">Clients Satisfaction</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Facts-row -->
+
+        <!-- Select-row -->
+        <div class="row justify-content-center my-4">
+            <div class="col-12 text-center">
+                <h2 class="star-text3">SELECTED WORK</h2>
+                <span class="label text-center">Our exceptional design services</span>
+            </div>
+            <div class="col-xl-5 col-md-5 zoom-card">
+                <div class="zoom-son">
+                    <!-- The Image 1 -->
+                    <div class="card-wrapper">
+                        <!-- <div class="shade"></div> -->
+                        <div class="card__bg__image">
+                            <img loading="lazy" class="toZoom" src="img/img-01.png">
+                        </div>
+                    </div>
+                    <!-- The Modal -->
+                    <div class="idMyModal modal">
+                        <span class="close">&times;</span>
+                        <img loading="lazy" class="modal-content" src="img/img-01.png">
+                    </div>
+                </div>
+                <h3 class="select-text">Fortknox Chat Application</h3>
+                <span class="select-text2">Branding & Design</span>
+            </div>
+            <div class="col-xl-5 col-md-5 zoom-card">
+                <div class="zoom-son">
+                    <!-- The Image 1 -->
+                    <div class="card-wrapper">
+                        <!-- <div class="shade"></div> -->
+                        <div class="card__bg__image">
+                            <img loading="lazy" class="toZoom" src="img/image 6.png" width="100%">
+                        </div>
+                    </div>
+                    <!-- The Modal -->
+                    <div class="idMyModal modal">
+                        <span class="close">&times;</span>
+                        <img loading="lazy" class="modal-content" src="img/image 6.png">
+                    </div>
+                </div>
+                <h3 class="select-text">Bsoston RealEstate App</h3>
+                <span class="select-text2">Branding & Ui</span>
+            </div>
+            <div class="col-xl-5 col-md-5 zoom-card">
+                <div class="zoom-son">
+                    <!-- The Image 1 -->
+                    <div class="card-wrapper">
+                        <!-- <div class="shade"></div> -->
+                        <div class="card__bg__image">
+                            <img loading="lazy" class="toZoom" src="img/image-02.png" width="100%">
+                        </div>
+                    </div>
+                    <!-- The Modal -->
+                    <div class="idMyModal modal">
+                        <span class="close">&times;</span>
+                        <img loading="lazy" class="modal-content" src="img/image-02.png">
+                    </div>
+                </div>
+                <h3 class="select-text">Boltzshift - Portfolio</h3>
+                <span class="select-text2">Design & Development</span>
+            </div>
+            <div class="col-xl-5 col-md-5 zoom-card">
+                <div class="zoom-son">
+                    <!-- The Image 1 -->
+                    <div class="card-wrapper">
+                        <!-- <div class="shade"></div> -->
+                        <div class="card__bg__image">
+                            <img loading="lazy" class="toZoom" src="img/image-04.png" width="100%">
+                        </div>
+                    </div>
+                    <!-- The Modal -->
+                    <div class="idMyModal modal">
+                        <span class="close ">&times;</span>
+                        <img loading="lazy" class="modal-content" src="img/image-04.png">
+                    </div>
+                    <h3 class="select-text">Croma - Agency</h3>
+                    <span class="select-text2">Branding & Web</span>
+                </div>
+            </div>
+            <button class="btn arrow" style="margin-top: 5rem;">
+                Veiw More
+            </button>
+        </div>
+        <!-- Select-row -->
+
+        <!-- Services-row -->
+        <div class="row">
+            <div class="col-xl-3 col-md-12">
+                <h4 class="servis-text offset-xl-2 offset-1">KNOW OUR <br> SERVICES</h4>
+                <span class="select-text2 offset-xl-2 offset-1">Our exceptional design services</span>
+            </div>
+            <div class="col-xl-9">
+                <div class="row offset-xl-2 offset-1">
+                    <div class="col-xl-5 col-md-5 servic-card">
+                        <div class="d-flex justify-content-between">
+                            <img loading="lazy" src="img/icon-01.png" style="background-color: transparent;">
+                            <img loading="lazy" src="img/link-arrow-right.svg" class="s-arrow" data-toggle="modal" data-target="#exampleModalCenter">
+                        </div>
+                        <h3 class="select-text mt-3">Branding</h3>
+                        <span class="select-text2" style="font-size: 14px;">I create efficient, adaptable, and engaging websites. No predefined patterns. No sluggish, complex code. Webflow forms the foundation of my web development approach. I employ it to provide safe, top-notch bespoke websites.</span>
+                        <!-- Modal -->
+                        <div class="modal2" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" style="background-color: transparent;" role="document">
+                                <div class="modal-content2">
+                                    <div class="modal-header bg-white border-0">
+                                        <h2 class="modal-title" id="exampleModalLongTitle">Branding</h2>
+                                        <button type="button" class="close" data-dismiss="modal2" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body bg-white border-0">
+                                        <span class="select-text2" style="font-size: 14px;">I create efficient, adaptable, and engaging websites. No predefined patterns. No sluggish, complex code. Webflow forms the foundation of my web development approach. I employ it to provide safe, top-notch bespoke websites.</span>
+                                    </div>
+                                    <div class="modal-footer bg-white border-0">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal2">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Modal -->
+                    </div>
+                    <div class="col-xl-5 col-md-5 servic-card">
+                        <div class="d-flex justify-content-between">
+                            <img loading="lazy" src="img/icon-02.png" style="background-color: transparent;">
+                            <img loading="lazy" src="img/Clip path group.svg" class="icon-hv">
+                            <img loading="lazy" src="img/link-arrow-right.svg" class="s-arrow" class="s-arrow" data-toggle="modal" data-target="#exampleModalCenter2">
+                        </div>
+                        <h3 class="select-text mt-3">Design</h3>
+                        <span class="select-text2" style="font-size: 14px;">I create efficient, adaptable, and engaging websites. No predefined patterns. No sluggish, complex code. Webflow forms the foundation of my web development approach. I employ it to provide safe, top-notch bespoke websites.</span>
+                        <!-- Modal -->
+                        <div class="modal2 second" id="exampleModalCenter2" tabindex="-2" role="dialog" aria-labelledby="exampleModalCenterTitle2" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" style="background-color: transparent;" role="document">
+                                <div class="modal-content2">
+                                    <div class="modal-header bg-white border-0">
+                                        <h2 class="modal-title" id="exampleModalLongTitle2">Design</h2>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body bg-white border-0">
+                                        <span class="select-text2" style="font-size: 14px;">I create efficient, adaptable, and engaging websites. No predefined patterns. No sluggish, complex code. Webflow forms the foundation of my web development approach. I employ it to provide safe, top-notch bespoke websites.</span>
+                                    </div>
+                                    <div class="modal-footer bg-white border-0">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Modal -->
+                    </div>
+                </div>
+                <div class="row offset-xl-2 offset-1">
+                    <div class="col-xl-5 col-md-5 servic-card">
+                        <div class="d-flex justify-content-between">
+                            <img loading="lazy" src="img/icon-03.png" style="background-color: transparent;">
+                            <img loading="lazy" src="img/icon-03h.png" class="icon-hv">
+                            <img loading="lazy" src="img/link-arrow-right.svg" class="s-arrow" class="s-arrow" data-toggle="modal" data-target="#exampleModalCenter3">
+                        </div>
+                        <h3 class="select-text mt-3">Development</h3>
+                        <span class="select-text2" style="font-size: 14px;">I create efficient, adaptable, and engaging websites. No predefined patterns. No sluggish, complex code. Webflow forms the foundation of my web development approach. I employ it to provide safe, top-notch bespoke websites.</span>
+                        <!-- Modal -->
+                        <div class="modal2 third" id="exampleModalCenter3" tabindex="-3" role="dialog" aria-labelledby="exampleModalCenterTitle2" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" style="background-color: transparent;" role="document">
+                                <div class="modal-content2">
+                                    <div class="modal-header bg-white border-0">
+                                        <h2 class="modal-title" id="exampleModalLongTitle2">Development</h2>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body bg-white border-0">
+                                        <span class="select-text2" style="font-size: 14px;">I create efficient, adaptable, and engaging websites. No predefined patterns. No sluggish, complex code. Webflow forms the foundation of my web development approach. I employ it to provide safe, top-notch bespoke websites.</span>
+                                    </div>
+                                    <div class="modal-footer bg-white border-0">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Modal -->
+                    </div>
+                    <div class="col-xl-5 col-md-5 servic-card">
+                        <div class="d-flex justify-content-between">
+                            <img loading="lazy" src="img/icon-04.png" style="background-color: transparent;">
+                            <img loading="lazy" src="img/Group.png" class="icon-hv">
+                            <img loading="lazy" src="img/link-arrow-right.svg" class="s-arrow" class="s-arrow" data-toggle="modal" data-target="#exampleModalCenter4">
+                        </div>
+                        <h3 class="select-text mt-3">Art Direction</h3>
+                        <span class="select-text2" style="font-size: 14px;">I create efficient, adaptable, and engaging websites. No predefined patterns. No sluggish, complex code. Webflow forms the foundation of my web development approach. I employ it to provide safe, top-notch bespoke websites.</span>
+                        <!-- Modal -->
+                        <div class="modal2 fourth" id="exampleModalCenter4" tabindex="-4" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" style="background-color: transparent;" role="document">
+                                <div class="modal-content2">
+                                    <div class="modal-header bg-white border-0">
+                                        <h2 class="modal-title" id="exampleModalLongTitle2">Art Direction</h2>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body bg-white border-0">
+                                        <span class="select-text2" style="font-size: 14px;">I create efficient, adaptable, and engaging websites. No predefined patterns. No sluggish, complex code. Webflow forms the foundation of my web development approach. I employ it to provide safe, top-notch bespoke websites.</span>
+                                    </div>
+                                    <div class="modal-footer bg-white border-0">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Modal -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Services-row -->
+
+        <!-- Companies-row -->
+        <div class="row">
+            <div class="col-12 text-center">
+                <span class="label">Proudly serving some of the top global companies</span>
+            </div>
+            <marquee>
+                <div class="col-lg-12 my-3">
+                    <div class="row justify-content-around">
+                        <div class="col-lg-2 col-2 p-0">
+                            <img src="img/wavefun.png" class="img-fluid">
+                        </div>
+                        <div class="col-lg-2 col-2 p-0">
+                            <img src="img/proline.png" class="img-fluid">
+                        </div>
+                        <div class="col-lg-2 col-2 p-0">
+                            <img src="img/Sisila (1).png" class="img-fluid">
+                        </div>
+                        <div class="col-lg-2 col-2 p-0">
+                            <img src="img/doradesign.png" class="img-fluid">
+                        </div>
+                        <div class="col-lg-2 col-2 p-0">
+                            <img src="img/convertkit.png" class="img-fluid">
+                        </div>
+                        <div class="col-lg-2 col-2 p-0">
+                            <img src="img/sisila (2).png" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </marquee>
+        </div>
+        <!-- Companies-row -->
+
+        <!-- Process-row -->
+        <div class="row" style="display: flex;justify-content: space-around;">
+            <div class="col-12 text-center">
+                <h2 class="star-text3">OUR PROCESS</h2>
+            </div>
+            <div class="col-12 my-4">
+                <div class="row proces-row mt-3">
+                    <div class="col-xl-3 col-md-5 col-10 proces-card">
+                        <h3 class="proces-text display-3">01</h3>
+                        <h3 class="select-text mt-3">Research & Plan</h3>
+                        <span class="select-text2" style="font-size: 14px;">Design process is critical for gathering information, requirements, and other data you need in order to make informed decisions later.</span>
+                    </div>
+                    <div class="col-xl-3 col-md-5 col-10 proces-card">
+                        <h3 class="proces-text display-3">02</h3>
+                        <h3 class="select-text mt-3">Mock Up</h3>
+                        <span class="select-text2" style="font-size: 14px;">Creating a mock up is the step of the design process most people recognize — it’s the most visual part of the process In-depth sketching and brainstorming.</span>
+                    </div>
+                    <div class="col-xl-3 col-md-5 col-10 proces-card">
+                        <h3 class="proces-text display-3">03</h3>
+                        <h3 class="select-text mt-3">Build</h3>
+                        <span class="select-text2" style="font-size: 14px;">Implement the solution (often with the help of other professionals like programmers, printers, or manufacturers)Revise the solution as technical issues.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Process-row -->
+
+        <!-- Plan-row -->
+        <div class="row" style="display: flex;justify-content: space-around;">
+            <div class="col-12 text-center">
+                <h2 class="star-text3">CHOOSE YOUR PLAN</h2>
+                <span class="label text-center">Consign offers a number of pricing plans to help you find one that fits your <br> business needs best</span>
+            </div>
+            <div class="col-12 my-4">
+                <div class="row price-row mt-3" style="display: flex;justify-content: space-around;">
+                    <div class="col-xl-3 col-md-5 col-10 price-card">
+                        <span class="price-text">BASIC</span>
+                        <h3 class="price-text2">$49</h3>
+                        <button class="btn price-btn">Get Started</button>
+                        <p class="price-text3">
+                            <img loading="lazy" src="img/wrap.png">&nbsp;&nbsp;Weekly updates
+                            <img class="p-icon2" loading="lazy" src="img/right-circle.svg" style="position: absolute;">
+                        </p>
+                        <p class="price-text3">
+                            <img loading="lazy" src="img/wrap.png">&nbsp;&nbsp;Secure and Reliable
+                            <img class="p-icon2" loading="lazy" src="img/right-circle.svg" style="position: absolute;">
+                        </p>
+                        <p class="price-text3">
+                            <img loading="lazy" src="img/wrap.png">&nbsp;&nbsp;LImited data points
+                            <img class="p-icon2" loading="lazy" src="img/right-circle.svg" style="position: absolute;">
+                        </p>
+                        <p class="price-text3">
+                            <img loading="lazy" src="img/wrap.png">&nbsp;&nbsp;10+FreeTemplates
+                            <img class="p-icon2" loading="lazy" src="img/right-circle.svg" style="position: absolute;">
+                        </p>
+                        <p class="price-text3">
+                            <img loading="lazy" src="img/wrap.png">&nbsp;&nbsp;No Support
+                            <img class="p-icon2" loading="lazy" src="img/right-circle.svg" style="position: absolute;">
+                        </p>
+                        <p class="price-text3">
+                            <img loading="lazy" src="img/wrap.png">&nbsp;&nbsp;Budget-friendly pricing
+                            <img class="p-icon2" loading="lazy" src="img/right-circle.svg" style="position: absolute;">
+                        </p>
+                    </div>
+                    <div class="col-xl-3 col-md-5 col-10 price-card">
+                        <span class="price-text">PRO</span>
+                        <h3 class="price-text2">$249</h3>
+                        <button class="btn price-btn">Get Started</button>
+                        <p class="price-text3">
+                            <!-- <img class="p-icon" loading="lazy" src="img/wrap.png">&nbsp;&nbsp;Daily updates -->
+                            <p class="price-text3">
+                                <img class="p-icon" loading="lazy" src="img/wrap.png">&nbsp;&nbsp;Secure and Reliable
+                                <img class="p-icon2" loading="lazy" src="img/right-circle.svg" style="position: absolute;">
+                            </p>
+                            <p class="price-text3">
+                                <img class="p-icon" loading="lazy" src="img/wrap.png">&nbsp;&nbsp;Hosting + Domain setup
+                                <img class="p-icon2" loading="lazy" src="img/right-circle.svg" style="position: absolute;">
+                            </p>
+                            <p class="price-text3">
+                                <img class="p-icon" loading="lazy" src="img/wrap.png">&nbsp;&nbsp;Wesite design & development
+                                <img class="p-icon2" loading="lazy" src="img/right-circle.svg" style="position: absolute;">
+                            </p>
+                            <p class="price-text3">
+                                <img class="p-icon" loading="lazy" src="img/wrap.png">&nbsp;&nbsp;Priority Support
+                                <img class="p-icon2" loading="lazy" src="img/right-circle.svg" style="position: absolute;">
+                            </p>
+                            <p class="price-text3">
+                                <img class="p-icon" loading="lazy" src="img/wrap.png">&nbsp;&nbsp;For businesses for professionals
+                                <img class="p-icon2" loading="lazy" src="img/right-circle.svg" style="position: absolute;">
+                            </p>
+                    </div>
+                    <div class="col-xl-3 col-md-5 col-10 price-card">
+                        <span class="price-text">ENTERPRICE</span>
+                        <h3 class="price-text2">$499</h3>
+                        <button class="btn price-btn">Get Started</button>
+                        <p class="price-text3">
+                            <img loading="lazy" src="img/wrap.png">&nbsp;&nbsp;ForEnterprice
+                            <img class="p-icon2" loading="lazy" src="img/right-circle.svg" style="position: absolute;">
+                        </p>
+                        <p class="price-text3">
+                            <img loading="lazy" src="img/wrap.png">&nbsp;&nbsp;Secure and Reliable
+                            <img class="p-icon2" loading="lazy" src="img/right-circle.svg" style="position: absolute;">
+                        </p>
+                        <p class="price-text3">
+                            <img loading="lazy" src="img/wrap.png">&nbsp;&nbsp;Realtime data updates
+                            <img class="p-icon2" loading="lazy" src="img/right-circle.svg" style="position: absolute;">
+                        </p>
+                        <p class="price-text3">
+                            <img loading="lazy" src="img/wrap.png">&nbsp;&nbsp;Comprehensive data points
+                            <img class="p-icon2" loading="lazy" src="img/right-circle.svg" style="position: absolute;">
+                        </p>
+                        <p class="price-text3">
+                            <img loading="lazy" src="img/wrap.png">&nbsp;&nbsp;Priority Support
+                            <img class="p-icon2" loading="lazy" src="img/right-circle.svg" style="position: absolute;">
+                        </p>
+                        <p class="price-text3">
+                            <img loading="lazy" src="img/wrap.png">&nbsp;&nbsp;Budget-friendly pricing
+                            <img class="p-icon2" loading="lazy" src="img/right-circle.svg" style="position: absolute;">
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Plan-row -->
+
+        <!-- Plan-row -->
+        <div class="row justify-content-center">
+            <div class="col-12 text-center my-5">
+                <h2 class="star-text3">CONTACT US</h2>
+                <span class="label text-center">Consign offers a number of pricing plans to help you find one that fits your <br> business needs best</span>
+            </div><br>
+            <div class="col-xl-6" style="margin-top: 3rem;">
+                <div class="form-container">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <section class="section--purple wow slideInRight" data-wow-delay=".2s">
+                                    <input type="text" class="form-control" id="name" placeholder="Name">
+                                </section>
+                            </div>
+                            <div class="form-group col-md-6 px-3">
+                                <section class="section--purple wow slideInRight" data-wow-delay=".2s">
+                                    <input type="email" class="form-control offset-lg-2 offset-0" id="email" placeholder="Emil">
+                                </section>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <section class="section--purple wow slideInRight" data-wow-delay=".2s">
+                                    <input type="text" class="form-control" id="phone" placeholder="Phone no">
+                                </section>
+                            </div>
+                            <div class="form-group col-md-6 px-3">
+                                <section class="section--purple wow slideInRight" data-wow-delay=".2s">
+                                    <input type="text" class="form-control offset-lg-2 offset-0" id="subject" placeholder="Subject">
+                                </section>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <section class="section--purple wow slideInRight" data-wow-delay=".2s">
+                                <!-- <label for="message">Your Message</label> -->
+                                <textarea class="form-control" rows="10" id="message" placeholder="Message*"></textarea>
+                            </section>
+                        </div><br>
+                        <button class="btn arrow" style="margin-top: 5rem;">
+                            Send
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-xl-6 map">
+                <div id="map"></div>
+            </div>
+        </div>
+        <!-- Contact-row -->
+
+        <!--  Owl Carousel -->
+        <div class="row justify-content-center">
+            <div class="col-12 text-center">
+                <h2 class="star-text3">TESTIMONIALS</h2>
+            </div>
+            <div class="col-xl-11 testimonial-container">
+                <div class="owl-carousel owl-theme">
+                    <!-- 1-mijoz -->
+                    <div class="col-xl-12 position-relative">
+                        <img class="quote" src="img/icon-quote.png" style="position: absolute;z-index: 100 !important;">
+                        <div class="testimonial-item">
+                            <p class="testimonial-text">“I am looking forward to working with the Boltzshift again.”</p>
+                            <p class="testimonial-desc">
+                                I create efficient, adaptable, and engaging websites. No predefined patterns. No sluggish, complex code. Webflow forms the foundation of my web development approach. I employ it to provide safe, top-notch bespoke websites.
+                            </p>
+                            <hr>
+                            <div class="testimonial-footer">
+                                <div class="author-info">
+                                    <img src="img/people-img.png" alt="Dora Dybal">
+                                    <div class="author-details">
+                                        <strong style="background-color: transparent !important;">Dora Dybala</strong><br>CEO & Founder of Company
+                                    </div>
+                                </div>
+                                <div class="convertkit-logo">
+                                    <img src="img/convertkit2.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2-mijoz -->
+                    <div class="col-xl-12 position-relative">
+                        <img class="quote" src="img/icon-quote.png" style="position: absolute;z-index: 100 !important;">
+                        <div class="testimonial-item">
+                            <p class="testimonial-text">Anticipating the next chapter of collaboration with Boltzshift.</p>
+                            <p class="testimonial-desc">
+                                I create efficient, adaptable, and engaging websites. No predefined patterns. No sluggish, complex code. Webflow forms the foundation of my web development approach. I employ it to provide safe, top-notch bespoke websites.
+                            </p>
+                            <hr>
+                            <div class="testimonial-footer">
+                                <div class="author-info">
+                                    <img src="img/people-img (1).png" alt="Ryan Dyson">
+                                    <div class="author-details">
+                                        <strong style="background-color: transparent !important;">Ryan Dyson</strong><br> CTO of Company
+                                    </div>
+                                </div>
+                                <div class="convertkit-logo">
+                                    <img src="img/convertkit2.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Owl Carousel -->
+
+        <!-- Yellow-card -->
+        <div class="row yellow-card">
+            <div class="col-xl-11 text-center">
+                <h1 class="y-text">Innovative Web, Mobile & <br> Product Solutions</h1>
+                <p class="yellow-text">Join today and experience the difference. Don't miss out on the opportunity to transform your <br> business.Let's grow together!</p><br>
+                <button class="btn quotation">
+                    Get a free quotation
+                </button><br><br>
+                <span class="y-text2 ml-2">
+                    <img src="img/wrap.png"> Affordable Plans for all
+                </span>
+                <span class="y-text2 ml-2">
+                    <img src="img/wrap.png"> Secure and Reliable
+                </span>
+            </div>
+        </div>
+        <!-- Yellow-card -->
+
+        <!-- Category-row -->
+        <div class="row">
+            <marquee>
+                <div class="col-xl-12 my-3">
+                    <div class="row justify-content-around">
+                        <div class="col-xl-1 col-md-1 col-2">
+                            <div class="d-flex">
+                                <span style="margin-top: 1.4rem;">01</span>
+                                <h1 class="display-5 category-text">UX</h1>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-2">
+                            <div class="d-flex">
+                                <span style="margin-top: 1.4rem;">02</span>
+                                <h1 class="display-5 category-text">Branding</h1>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-2">
+                            <div class="d-flex">
+                                <span style="margin-top: 1.4rem;">03</span>
+                                <h1 class="display-5 category-text">Startegy</h1>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-2">
+                            <div class="d-flex">
+                                <span style="margin-top: 1.4rem;">04</span>
+                                <h1 class="display-5 category-text">Consulting</h1>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-2">
+                            <div class="d-flex">
+                                <span style="margin-top: 1.4rem;">05</span>
+                                <h1 class="display-5 category-text">Copywriting</h1>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-2 ml-5 p-0">
+                            <div class="d-flex">
+                                <span style="margin-top: 1.4rem;">06</span>
+                                <h1 class="display-5 category-text">Startegy</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </marquee>
+        </div>
+        <!-- Category-row -->
+
+        <!-- Footer -->
+        <footer>
+            <div class="row footer">
+                <div class="col-xl-11 bg-f">
+                    <div class="row">
+                        <div class="col-xl-3 col-md-4">
+                            <a href="#">
+                                <img src="img/Logo (1).png" style="background-color: transparent;">
+                            </a>
+                        </div>
+                        <div class="col-xl-3 col-md-4">
+                            <a href="#">About Us</a><br>
+                            <a href="#">Features</a><br>
+                            <a href="#">Servies</a><br>
+                            <a href="#">Blog</a><br>
+                            <a href="#">Contact Us</a><br>
+                        </div>
+                        <div class="col-xl-3 col-md-4">
+                            <a href="#">Integrations</a><br>
+                            <a href="#">Careers</a><br>
+                            <a href="#">Privacy Policy</a><br>
+                            <a href="#">Terms & Condition</a><br>
+                            <a href="#">Cookie Policy</a><br>
+                        </div>
+                        <div class="col-xl-3 col-md-12">
+                            <a href="#">+1 (0) 911 18 27 16</a><br>
+                            <a href="#">INFO@BOLTZSHIFT.COM</a><br>
+                            <a href="#">Based in San Fransisco</a><br>
+                            <a href="#">United Kingdom</a><br>
+                        </div>
+                        <div class="col-xl-12 p-0 bg-f">
+                            <div class="d-flex bg-f">
+                                <span style="color: #252527 ;">Follw us</span>&nbsp;
+                                <a href="#" class="ml-2 mb-4">
+                                    <img src="img/twitter-x.png" style="background-color: transparent;">
+                                </a>
+                                <a href="#" class="ml-2 mb-4">
+                                    <img src="img/instagram.png" style="background-color: transparent;">
+                                </a>
+                                <a href="#" class="ml-2 mb-4">
+                                    <img src="img/youtube.png" style="background-color: transparent;">
+                                </a>
+                                <a href="#" class="ml-2 mb-4">
+                                    <img src="img/facebook.png" style="background-color: transparent;">
+                                </a>
+                            </div>
+                            <p class="f-text">copyright @ 2023 All Rights Reserved</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer -->
+    </div>
+
+
+    <script defer src="index.js "></script>
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js "></script>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js "></script>
+    <!-- <script defer src="vendor/scripts/jQuery.min.js "></script> -->
+    <script defer src="vendor/scripts/popper.js "></script>
+    <script defer src="vendor/scripts/bootstrap.min.js "></script>
+    <script defer src="vendor/scripts/app.js "></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js "></script>
+    <script>
+        // Xarita markazi - Kanada
+        var map = L.map('map').setView([56.1304, -106.3468], 5);
+
+        // Qora fonli (Dark Mode) xarita
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+            // attribution: '&copy; <a href="https://carto.com/ ">CARTO</a>',
+            subdomains: 'abcd',
+            maxZoom: 20
+        }).addTo(map);
+
+        // //
+    </script>
+
+</html>
