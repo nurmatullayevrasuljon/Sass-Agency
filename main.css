@@ -548,13 +548,13 @@ span {
         margin-left: -6rem !important;
     }
 }
-@media (max-width: 924px) {
+@media (max-width: 982px) {
     .play-box {
         width: 100%;
     }
     .play-icon {
-        width: 70px !important;
-        height: 70px !important;
+        width: 60px !important;
+        height: 60px !important;
         margin-left: -6rem !important;
     }
 }
