@@ -543,8 +543,18 @@ span {
         width: 100%;
     }
     .play-icon {
-        width: 50px !important;
-        height: 50px !important;
+        width: 70px !important;
+        height: 70px !important;
+        margin-left: -6rem !important;
+    }
+}
+@media (max-width: 768px) {
+    .play-box {
+        width: 100%;
+    }
+    .play-icon {
+        width: 80px !important;
+        height: 80px !important;
         margin-left: -6rem !important;
     }
 }
