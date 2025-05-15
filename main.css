@@ -555,7 +555,7 @@ span {
     .play-icon {
         width: 70px !important;
         height: 70px !important;
-        /* margin-left: -6rem !important; */
+        margin-left: -6rem !important;
     }
 }
 
