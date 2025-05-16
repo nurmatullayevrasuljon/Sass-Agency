@@ -543,9 +543,9 @@ span {
         width: 100%;
     }
     .play-icon {
-        width: 60px !important;
-        height: 60px !important;
-        /* margin-top: -1rem !important; */
+        width: 65px !important;
+        height: 65px !important;
+        margin-top: 1rem !important;
         margin-left: -6rem !important;
     }
 }
