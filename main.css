@@ -538,7 +538,7 @@ span {
     animation-fill-mode: forwards;
 }
 
-@media (max-width: 460px){
+@media (min-width: 460px) and (max-width: 1024px) {
     .play-box {
         width: 100%;
     }
