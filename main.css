@@ -549,7 +549,7 @@ span {
         margin-left: -6rem !important;
     }
 }
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .play-box {
         width: 100%;
     }
@@ -559,7 +559,7 @@ span {
         margin-top: 1.5rem !important;
         margin-left: -6rem !important;
     }
-}
+} */
 
 @keyframes send {
     from {
